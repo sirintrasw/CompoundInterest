@@ -1,0 +1,17 @@
+body {
+text-align: center;
+width:100%;
+background-color:#457B9D;
+margin:0,0,0,0;
+}
+
+#wrapper {
+color:#1D3557 ;
+text-align: left; 
+width: 640px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+background-color:#F1FAEE;
+padding:20px;
+}
