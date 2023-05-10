@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  
+<link rel="stylesheet" type="text/css" href="myCenter.css" />
+<title>โปรแกรมดอกเบี้ยทบต้น</title>
+<script>
+</script>
+
+</head>
+<body>
+    <div id="wrapper" align="center">
+      <div align="center">
+        <div >
+            <h1>โปรแกรมคำนวณเงินรวมดอกเบี้ยทบต้น  A</h1>
+            <hr>
+        </div>
+      
+        <div >
+            <table border="0">
+                <tr>
+                    <td>เงินต้น(P) :</td>
+                    <td><input id="prin"   type="text"> </td>
+                    </tr>
+                <tr>
+                    <td>ดอกเบี้ยต่อครั้ง(r) :</td>
+                    <td><input id="per" type="text"> </td>
+                </tr>
+                <tr>
+                    <td>ระยะเวลาปีหรือครั้ง(t) :</td>
+                    <td><input id="time" type="text"> </td>
+                </tr>
+                <tr>
+                    <td>เงินรวม(A) :</td>
+                    <td><input id="total" type="text"> </td>
+                </td>
+                <tr>
+                    <td></td>
+                    <td><button onclick="displayToresult(total)">Caluculate</button></td>
+                </tr>
+            </table>
+        </div>
+            <div >
+                <br>
+        <table border="0" bgcolor = #A8DADC>
+            <tr>
+                <td>
+                    <img src="file:///C:/AppServ/www/sirintra/javascript/projectA/pic.png" width=200  >
+                </td>
+            </tr>
+            <tr>
+                <td>A = เงินรวม</td>
+            
+            </tr>
+            <tr>
+                <td>P = เงินต้น</td>
+            
+            </tr>
+            <tr>
+                <td>r = ดอกเบี้ยต่อครั้ง</td>
+            </tr>
+            <tr>
+                <td>t = จำนวนครั้งที่คิดดอกเบี้ยทบต้น</td>
+            </tr>
+
+
+        </table>
+            </div>
+      
+     
+
+        <table>
+
+            <h2>โปรแกรมคำนวนเงินรวมดอกเบี้ยทบต้น <br> แบบ หาค่า r และ t ให้</h2>
+                <tr>
+                    <td>เงินต้น(P) :</td>
+                    <td><input id="aprin"></td>
+                </tr>
+                <tr>
+                    <td>ดอกเบี้ยร้อยละ :</td>
+                    <td><input id="aper" type="text"> ต่อปี</td>
+                </tr>
+                <tr>
+                    <td>คิดดอกเบี้ยทุกๆ</td>
+                    <td><input id="amonthto" type="text"> เดือน</td>
+                    </tr>
+                    <tr>
+                        <td>ดอกเบี้ยต่อครั้ง(r) :</td>
+                        <td><div id="rtotal" > </div></td>
+                    </tr>
+                    <tr>
+                        <td>ฝากจำนวน :</td>
+                        <td><input id="ayear" type="text" style="width: 50px;"> ปี 
+                        <input id="amonth" type="text"style="width: 50px;"> เดือน </td>
+                    </tr>
+                <tr>
+                    <td>ระยะเวลาปีหรือครั้ง(t) :</td>
+                    <td><p id="atime" > </p></td>
+                </tr>
+                <tr>
+                    <td>เงินรวม(A) :</td>
+                    <td><input id="atotal" type="text"> </td>
+                </td>
+                <tr>
+                    <td></td>
+                    <td><button onclick="displayAnstoresult()">Caluculate</button></td>
+                </tr>
+                
+            </table>
+            <h2>คำตอบแบบละเอียด</h2>
+            <table>
+                <tr><td></td></tr> 
+            <tr><td><p id="output"></p>  </td></tr> 
+      </table>
+        </div>
+    </div>
+      
+
+<script src="app.js">  </script>
+</body>
+</html>
